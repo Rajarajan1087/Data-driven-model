@@ -1,0 +1,31 @@
+com.tibco.tibjms.naming.TibjmsInitialContextFactory
+tibjmsnaming://10.180.20.83:10830
+TTG.GBR.EVE.Public.Request.CRM.Customer.ManageMobileSubscription.1
+120000
+emm_hrt
+emm_hrt
+1.0
+EAI_OPS
+<?xml version = "1.0" encoding = "UTF-8"?>
+<ns0:ManageMobileSubscriptionRequest xmlns:ns0 = "http://xmlns.talktalk.co.uk/CRM/Customer/ManageMobileSubscription">
+	<ns0:CommonHeader>
+		<ns1:commonHeader xmlns:ns1 = "http://xmlns.cpw.co.uk/CPWIntegrationsTibco/Common/CommonHeader">
+			<ns1:id>INT522</ns1:id>
+			<ns1:paradigm>REQUEST</ns1:paradigm>
+			<ns1:version>1.0.0</ns1:version>
+			<ns1:from ns1:componentVersion = "1.0.0"/>
+			<ns1:to ns1:destination = "TTG.GBR.EVE.Public.Request.CRM.Customer.ManageMobileSubscription.1"/>
+			<ns1:tracking>
+				<ns1:item ns1:engine = "WebGatewayMobileCustomerServices_root" ns1:service = "CRM.Customer.ManageMobileSubscription" ns1:status = "S" ns1:timestamp = "2017-03-06T12:00:21+01.00"/>
+			</ns1:tracking>
+		</ns1:commonHeader>
+	</ns0:CommonHeader>
+	<ns0:customerId>2-000000-480133-0</ns0:customerId>
+	<ns0:sourceSystemId>2</ns0:sourceSystemId>
+	<ns0:mobileAccountId>20722846</ns0:mobileAccountId>
+	<ns0:billingMigrationStatus>A03</ns0:billingMigrationStatus>
+	<ns0:mobileNumber>07797605607</ns0:mobileNumber>
+	<ns0:subscriptionId>10829577</ns0:subscriptionId>
+	<ns0:subscriptionStatus>CREATED</ns0:subscriptionStatus>
+	<ns0:networkMigrationStatus>S01</ns0:networkMigrationStatus>
+</ns0:ManageMobileSubscriptionRequest>

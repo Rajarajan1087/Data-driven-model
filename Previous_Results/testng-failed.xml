@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [AUTOMATION Suite]" parallel="classes">
+  <parameter name="whereToRun" value="local"/>
+  <parameter name="test.env" value="POR"/>
+  <parameter name="RunType" value="PEGA"/>
+  <listeners>
+    <listener class-name="com.Retry.RetryListener"/>
+  </listeners>
+  <test name="AUTOMATION(failed)" parallel="classes">
+    <classes>
+      <class name="com.TestSuite.Customer180.MyDesk_C1_020">
+        <methods>
+          <include name="clearRuntimeData"/>
+          <include name="MyDesk_C1_020_Method" invocation-numbers="0 0 0"/>
+          <include name="InitializeExtentReports"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestSuite.Customer180.MyDesk_C1_020 -->
+      <class name="com.TestSuite.Customer180.MyDesk_C1_018">
+        <methods>
+          <include name="clearRuntimeData"/>
+          <include name="InitializeExtentReports"/>
+          <include name="setUp"/>
+          <include name="MyDesk_C1_018_Method" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- com.TestSuite.Customer180.MyDesk_C1_018 -->
+      <class name="com.TestSuite.CustomerSearch.MyDesk_CS_010">
+        <methods>
+          <include name="MyDesk_CS_010_Method" invocation-numbers="0 0 0"/>
+          <include name="clearRuntimeData"/>
+          <include name="setUp"/>
+          <include name="InitializeExtentReports"/>
+        </methods>
+      </class> <!-- com.TestSuite.CustomerSearch.MyDesk_CS_010 -->
+      <class name="com.TestSuite.Customer180.MyDesk_C1_021">
+        <methods>
+          <include name="MyDesk_C1_021_Method" invocation-numbers="0 0 0"/>
+          <include name="clearRuntimeData"/>
+          <include name="InitializeExtentReports"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestSuite.Customer180.MyDesk_C1_021 -->
+      <class name="com.TestSuite.Customer180.MyDesk_C1_019">
+        <methods>
+          <include name="MyDesk_C1_019_Method" invocation-numbers="0 0 0"/>
+          <include name="clearRuntimeData"/>
+          <include name="InitializeExtentReports"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestSuite.Customer180.MyDesk_C1_019 -->
+      <class name="com.TestSuite.Customer180.MyDesk_C1_014">
+        <methods>
+          <include name="setupBeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="clearRuntimeData"/>
+          <include name="InitializeExtentReports"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestSuite.Customer180.MyDesk_C1_014 -->
+    </classes>
+  </test> <!-- AUTOMATION(failed) -->
+</suite> <!-- Failed suite [AUTOMATION Suite] -->

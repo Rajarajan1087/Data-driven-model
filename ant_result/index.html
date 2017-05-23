@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AUTOMATION_Suite">
+              <span class="suite-name border-skipped">AUTOMATION Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AUTOMATION_Suite">
+                    <span>C:\JENKINS_CI\workspace\PEGA_MYDesk\testngBVT.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AUTOMATION_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AUTOMATION_Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AUTOMATION_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AUTOMATION_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AUTOMATION_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AUTOMATION_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-AUTOMATION_Suite" class="hide-methods skipped suite-AUTOMATION_Suite"> (hide)</a> <!-- hide-methods skipped suite-AUTOMATION_Suite -->
+                      <a href="#" panel-name="suite-AUTOMATION_Suite" class="show-methods skipped suite-AUTOMATION_Suite"> (show)</a> <!-- show-methods skipped suite-AUTOMATION_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-AUTOMATION_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AUTOMATION_Suite" title="com.TestSuite.BVT.MyDesk_C1_020" hash-for-method="MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AUTOMATION_Suite" title="com.TestSuite.BVT.MyDesk_C1_020" hash-for-method="MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-AUTOMATION_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AUTOMATION_Suite" class="hide-methods passed suite-AUTOMATION_Suite"> (hide)</a> <!-- hide-methods passed suite-AUTOMATION_Suite -->
+                      <a href="#" panel-name="suite-AUTOMATION_Suite" class="show-methods passed suite-AUTOMATION_Suite"> (show)</a> <!-- show-methods passed suite-AUTOMATION_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-AUTOMATION_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AUTOMATION_Suite" title="com.TestSuite.BVT.MyDesk_C1_020" hash-for-method="MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AUTOMATION_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AUTOMATION_Suite" class="panel AUTOMATION_Suite">
+          <div class="suite-AUTOMATION_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.TestSuite.BVT.MyDesk_C1_020</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)">
+                  </a> <!-- MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...) -->
+                  <span class="method-name">MyDesk_C1_020_Method</span>
+                  <span class="parameters">(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for Account holder, 8)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null script failed, Wrap Up - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:858)
+	at com.BusinessModules.MyDesk.Common_Functions.click_on_Wrap_up_button(Common_Functions.java:608)
+	at com.TestSuite.BVT.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:148)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)">
+                  </a> <!-- MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...) -->
+                  <span class="method-name">MyDesk_C1_020_Method</span>
+                  <span class="parameters">(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for Account holder, 8)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null script failed, Wrap Up - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Common_Functions.click_on_Wrap_up_button(Common_Functions.java:608)
+	at com.TestSuite.BVT.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:148)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AUTOMATION_Suite-class-skipped -->
+          <div class="suite-AUTOMATION_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.TestSuite.BVT.MyDesk_C1_020</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)">
+                  </a> <!-- MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...) -->
+                  <span class="method-name">MyDesk_C1_020_Method</span>
+                  <span class="parameters">(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for Account holder, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AUTOMATION_Suite-class-passed -->
+        </div> <!-- panel AUTOMATION_Suite -->
+        <div panel-name="test-xml-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\JENKINS_CI\workspace\PEGA_MYDesk\testngBVT.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AUTOMATION Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;parameter name=&quot;whereToRun&quot; value=&quot;local&quot;/&gt;
+  &lt;parameter name=&quot;test.env&quot; value=&quot;POR&quot;/&gt;
+  &lt;parameter name=&quot;RunType&quot; value=&quot;PEGA&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.Retry.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;AUTOMATION&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.TestSuite.BVT.MyDesk_C1_020&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AUTOMATION --&gt;
+&lt;/suite&gt; &lt;!-- AUTOMATION Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AUTOMATION Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AUTOMATION (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AUTOMATION Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">SalesRegression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">MyDesk_C1_020_Method</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AUTOMATION Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AUTOMATION_Suite');
+function tableData_AUTOMATION_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'MyDesk_C1_020_Method')
+data.setCell(0, 2, 'com.TestSuite.BVT.MyDesk_C1_020')
+data.setCell(0, 3, 167362);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'MyDesk_C1_020_Method')
+data.setCell(1, 2, 'com.TestSuite.BVT.MyDesk_C1_020')
+data.setCell(1, 3, 164328);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'MyDesk_C1_020_Method')
+data.setCell(2, 2, 'com.TestSuite.BVT.MyDesk_C1_020')
+data.setCell(2, 3, 158445);
+window.suiteTableData['AUTOMATION_Suite']= { tableData: data, tableDiv: 'times-div-AUTOMATION_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-AUTOMATION_Suite">
+              </div> <!-- times-div-AUTOMATION_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AUTOMATION Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[ Reported ] PASS	MyDesk_C1_020 from Row number 8 -> Test Started</span>
+                <span class="reporter-method-output">[ Reported ] INFO	Test Description:   
+
+8)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for Account holder</span>
+                <span class="reporter-method-output">[ Reported ] INFO	Test Case Running on Desktop Mode:</span>
+                <span class="reporter-method-output">[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Password text box is found and welcome is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Log In is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-555996679 has been navigated</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to new window</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:42:36 :------ Home Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	New Interaction Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:42:41 :------ Identify Customer Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	PhoneNumber Search Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	PhoneNumber TextBox text box is found and 02035839304 is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Search Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:42:54 :------ Verify Caller Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	ID&V Status - IDENTIFIED is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 3 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:43:04 :------ After Additional Question been checked ------ </span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:43:05 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:43:12 :------ Summary Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Caller Name - (Account Holder) is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	ID&V Status - VERIFIED is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add Case button is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Hovered over Add Case button</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Case Category - TalkSafe is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:43:25 :------ Add Case Panel ------ </span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:43:26 :------ Add case  ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add cases is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Create</span>
+                <span class="reporter-method-output">[ Reported ] PASS	TalkSafe page got loaded successfully</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	14/03/2017 01:43:43 :AccountType is not found</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	14/03/2017 01:43:45 :Enrollment Options Updated for different Account Type Account Holder</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Enrollment Option : Not Now is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:43:51 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Wrap Up is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Wrap Up Comment Box text box is found and Wrapped up is entered</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:44:12 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Interaction history with Not Now for CLI 02035839304</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	User is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Logout is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Logout button is found and clicked.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[ Reported ] PASS	MyDesk_C1_020 from Row number 8 -> Test Started</span>
+                <span class="reporter-method-output">[ Reported ] INFO	Test Description:   
+
+8)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for Account holder</span>
+                <span class="reporter-method-output">[ Reported ] INFO	Test Case Running on Desktop Mode:</span>
+                <span class="reporter-method-output">[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Password text box is found and welcome is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Log In is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/Y4nUJyO-5wk%5B*/!STANDARD? has been navigated</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to new window</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:37:15 :------ Home Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	New Interaction Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:37:23 :------ Identify Customer Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	PhoneNumber Search Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	PhoneNumber TextBox text box is found and 02034902675 is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Search Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:37:36 :------ Verify Caller Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	ID&V Status - IDENTIFIED is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:37:42 :------ After Additional Question been checked ------ </span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:37:43 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:37:51 :------ Summary Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Caller Name - (Account Holder) is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	ID&V Status - VERIFIED is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add Case button is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Hovered over Add Case button</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Case Category - TalkSafe is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:38:05 :------ Add Case Panel ------ </span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:38:06 :------ Add case  ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add cases is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Create</span>
+                <span class="reporter-method-output">[ Reported ] PASS	TalkSafe page got loaded successfully</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	14/03/2017 01:38:27 :AccountType is not found</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	14/03/2017 01:38:28 :Enrollment Options Updated for different Account Type Account Holder</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Enrollment Option : Not Now is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:38:33 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	Wrap Up is not found</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[ Reported ] PASS	MyDesk_C1_020 from Row number 8 -> Test Started</span>
+                <span class="reporter-method-output">[ Reported ] INFO	Test Description:   
+
+8)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for Account holder</span>
+                <span class="reporter-method-output">[ Reported ] INFO	Test Case Running on Desktop Mode:</span>
+                <span class="reporter-method-output">[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Password text box is found and welcome is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Log In is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/Y4nUJyO-5wk%5B*/!STANDARD? has been navigated</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to new window</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:39:59 :------ Home Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	New Interaction Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:40:06 :------ Identify Customer Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	PhoneNumber Search Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	PhoneNumber TextBox text box is found and 02035839304 is entered</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Search Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:40:25 :------ Verify Caller Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	ID&V Status - IDENTIFIED is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Additional Question 3 been Checked is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:40:34 :------ After Additional Question been checked ------ </span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:40:35 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:40:43 :------ Summary Page ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Caller Name - (Account Holder) is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	ID&V Status - VERIFIED is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add Case button is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Hovered over Add Case button</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add Case button is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Hovered over Add Case button</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Case Category - TalkSafe is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:41:00 :------ Add Case Panel ------ </span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:41:02 :------ Add case  ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Add cases is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Create</span>
+                <span class="reporter-method-output">[ Reported ] PASS	TalkSafe page got loaded successfully</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	14/03/2017 01:41:20 :AccountType is not found</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	14/03/2017 01:41:22 :Enrollment Options Updated for different Account Type Account Holder</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Enrollment Option : Not Now is found</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] INFO	14/03/2017 01:41:27 :------ Before Submission ------ </span>
+                <span class="reporter-method-output">[ Reported ] PASS	Submit Button is found and Clicked</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Default Content</span>
+                <span class="reporter-method-output">[ Reported ] PASS	Switched to Frame: Search</span>
+                <span class="reporter-method-output">[ Reported ] FAIL	Wrap Up link is not found</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AUTOMATION_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.TestSuite.BVT.MyDesk_C1_020</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupBeforeSuite(org.testng.TestRunner@1551a94)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeExtentReports</span>
+                <span class="method-start">468 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</span>
+                <span class="method-start">936 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">936 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">clearRuntimeData([TestResult name=MyDesk_C1_020_Method status=SKIP method=MyDesk_C1_020.MyDesk_C1_020_Method(java.lan...)</span>
+                <span class="method-start">168298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeExtentReports</span>
+                <span class="method-start">177144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</span>
+                <span class="method-start">177175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">177175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">clearRuntimeData([TestResult name=MyDesk_C1_020_Method status=SKIP method=MyDesk_C1_020.MyDesk_C1_020_Method(java.lan...)</span>
+                <span class="method-start">335620 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeExtentReports</span>
+                <span class="method-start">337643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MyDesk_C1_020_Method(MyDesk_C1_020QWERTYTest Description:   
+
+8)Verify agent is able to select Enrollment option as Not n...)</span>
+                <span class="method-start">337650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">337650 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">clearRuntimeData([TestResult name=MyDesk_C1_020_Method status=SUCCESS method=MyDesk_C1_020.MyDesk_C1_020_Method(java....)</span>
+                <span class="method-start">501978 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">502882 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

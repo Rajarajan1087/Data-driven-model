@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project []>
+
+<project name="OnlineAutomationV2" default="run" basedir=".">
+	<!-- ========== Initialize Property Variables =================================== -->
+	<property environment="env" />
+	<!-- Base Directoy - Make sure this file is placed along with the bin folder -->
+	<property name="test.home" value="${basedir}" />
+	<!--Configure where Jar files located on this pc -->
+	<property name="test.jars" value="${test.home}\LocalJARs" />
+	<!--Do not change the following 3 tags-->
+	<property name="test.dest" value="${test.home}/bin" />
+	<property name="test.src" value="${test.home}/src" />
+	<!--<property name="ant.reports" value="${test.home}/ant_result" />
+	<property name="ant.reports" value="${test.dir}/ant_result/${time.stamp}" />-->
+	<tstamp>
+		<format property="time.stamp" pattern="yyyy_MM_dd-hh_mm_ss" />
+	</tstamp>
+	<property name="ant.reports" value="${test.home}/ant_result" />
+	<property name="ant.reports.location" value="${test.home}/ant_result" />
+	<echo message="${test.home}/Build_Result/${TestType}_Build_No_${env.BUILD_NUMBER}_AUTO_${time.stamp}" />
+	<taskdef resource="testngtasks" classpath="${test.jars}/testng-6.8.jar" />
+	<path id="testcase.path">
+		<pathelement location="${test.dest}" />
+		<fileset dir="${test.jars}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="setClassPath" unless="test.classpath">
+		<path id="classpath_jars">
+			<fileset dir="${test.jars}" includes="*.jar" />
+		</path>
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+	</target>
+
+	<!-- initialize everything-->
+	<target name="init" depends="setClassPath">
+		<!-- set time stamp-->
+		<tstamp>
+			<format property="start.time" pattern="MM/dd/yyyy hh:mm aa" />
+		</tstamp>
+		<condition property="ANT" value="${env.ANT_HOME}/bin/ant.bat" else="${env.ANT_HOME}/bin/ant">
+			<os family="windows" />
+		</condition>
+	</target>
+
+	<!-- copy -->
+	<target name="copy">
+		<echo message="Copying Test Results to Previous_Results Folder" />
+		<property name="source_dir" value="${basedir}/Previous_Results" />
+		<!-- <copy todir="${ant.reports.location}">
+	    <fileset dir="${basedir}/screenshots"/>
+		</copy> -->
+		<mkdir dir="${ant.reports.location}" />
+<!-- 		<mkdir dir="${basedir}/Report" /> -->
+		<copy todir="${basedir}/Previous_Results/">
+			<fileset dir="${ant.reports.location}" />
+		</copy>
+	</target>
+	<!-- clean -->
+	<target name="clean">
+		<echo message="Deleting old Build directory" />
+		<mkdir dir="${test.dest}"/>
+		<delete dir="${test.dest}" />
+		<echo message="Deleting old Reports Directory" />
+		<mkdir dir="${ant.reports}"/>
+		<delete dir="${ant.reports}" />
+	</target>
+
+	<!-- compile -->
+	<target name="compile" depends="init,copy,clean">
+		<echo message="Initializing and cleaning 1st" />
+		<delete includeemptydirs="true" quiet="true">
+			<fileset dir="${test.dest}" includes="**/*" />
+		</delete>
+		<echo message="Compile1: Creating Build directory..." />
+		<mkdir dir="${test.dest}" />
+		<echo message="Compile1: Creating Result directory..." />
+		<mkdir dir="${ant.reports}" />
+		<echo message="classpath------: ${test.classpath}" />
+		<echo message="compiling..." />
+		<javac debug="true" destdir="${test.dest}" srcdir="${test.src}" target="1.7" classpath="${test.classpath}" >
+		</javac>
+	</target>
+
+	<!-- build -->
+	<target name="build" depends="init">
+		<echo message="just an echo. but must have performed init before" />
+	</target>
+	<path id="test.c">
+		<fileset dir="${test.jars}" includes="*.jar" />
+	</path>
+	<!-- Copy TestNG XML -->
+	<target name="CopyTestNGXML">
+		<copy todir="${basedir}" file="${basedir}/TestNG_xmls/${Input}.xml" overwrite="true">
+				<filterset>
+			         <filter token="ENV" value="${env.name}"/>
+			      	 <filter token="MODE" value="${where.ToRun}"/>
+					<filter token="RunType" value="${TestType}"/>
+		        </filterset>
+		</copy>
+	</target>
+	<!-- Main Ant Run properties-->
+	<target name="run" depends="compile,CopyTestNGXML">
+		<condition property="propsSpecified">
+			<and>
+				<isset property="env.name" />
+			</and>
+		</condition>
+		<fail unless="propsSpecified" message="env.name property not specified."/>
+	<!--	  <copy todir="${basedir}" file="${basedir}/TestNG_xmls/testng.xml" overwrite="true">
+		<filterset>
+				         <filter token="ENV" value="${env.name}"/>
+				      	 <filter token="MODE" value="${where.ToRun}"/>
+				      </filterset>
+		   </copy>-->
+		<echo message="Should now start the actual test run." />
+		<delete includeemptydirs="true" quiet="true">
+			<fileset dir="${ant.reports}" includes="**/*" />
+		</delete>
+		<testng outputdir="${ant.reports}" classpathref="testcase.path" >
+			<xmlfileset dir="${test.home}" includes="${Input}.xml" />
+		</testng>
+	</target>
+
+	<!-- Generate XSLT report-->
+	<path id="testjar.c">
+		<fileset dir="${test.jars}" includes="*.jar" />
+	</path>
+
+	<target name="makexsltreports">
+		
+	</target>
+
+	
+	<!-- Update Quality Center -->
+	<target name="updateQc">
+		<exec executable="QCAPILib">
+			<arg value="QCformatResults.xml" />
+		</exec>
+	</target>
+</project>

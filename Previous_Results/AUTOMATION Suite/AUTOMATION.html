@@ -1,0 +1,1293 @@
+<html>
+<head>
+<title>TestNG:  AUTOMATION</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AUTOMATION</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/5/10</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 09 17:54:39 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1566 seconds (1566482 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method()'><b>MyDesk_C1_018_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_018<br>Parameters: MyDesk_C1_018QWERTYTest Description:   
+
+13)Verify SMS selection is available under Marketing Preference & Preferred contact method of customer tab
+27)Verify marketing preferences and  preferred contact methods is displayed as read only in the customer tab, 13<br/>
+<a href="#Output-24648047" onClick='toggleBox("Output-24648047", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24648047" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24648047">
+[ Reported ] PASS	MyDesk_C1_018 from Row number 13 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+13)Verify SMS selection is available under Marketing Preference & Preferred contact method of customer tab
+27)Verify marketing preferences and  preferred contact methods is displayed as read only in the customer tab<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method(MyDesk_C1_018.java:104)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24648047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24648047'><pre>java.lang.NullPointerException
+	at com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method(MyDesk_C1_018.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>22</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_018@1a10788</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method()'><b>MyDesk_C1_019_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_019<br>Parameters: MyDesk_C1_019QWERTYTest Description:   
+
+14)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for  Nominated user., 14<br/>
+<a href="#Output-15234733" onClick='toggleBox("Output-15234733", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15234733" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15234733">
+[ Reported ] PASS	MyDesk_C1_019 from Row number 14 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+14)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for  NominatedÂ user.<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=1428106035 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:02:27 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:02:32 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01134503726 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:02:44 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	Caller Identification - Nominated User/ Power of Attorney is found and Clicked<br/>
+[ Reported ] PASS	Telephone password CheckBox is found and Clicked<br/>
+[ Reported ] PASS	TelephonePasswordChecked<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:02:54 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:02:55 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:03:09 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:03:10 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:03:24 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:03:24 :Enrollment Options Updated for different Account Type Nominated User / POA<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] FAIL	Submit Enrollment Option link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method(MyDesk_C1_019.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15234733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15234733'><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method(MyDesk_C1_019.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>88</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_019@6c658</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method()'><b>MyDesk_C1_020_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_020<br>Parameters: MyDesk_C1_020QWERTYTest Description:   
+
+15)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for Account holder, 15<br/>
+<a href="#Output-4638355" onClick='toggleBox("Output-4638355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4638355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4638355">
+[ Reported ] PASS	MyDesk_C1_020 from Row number 15 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+15)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for Account holder<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-2138285302 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:07:58 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:08:02 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01416479209 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:08:13 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:08:19 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:08:19 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:08:25 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:08:38 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:08:39 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:08:52 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:08:53 :Enrollment Options Updated for different Account Type Account Holder<br/>
+[ Reported ] PASS	Enrollment Option : Enroll is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] PASS	Enrollment Option : Never is found<br/>
+[ Reported ] PASS	Enrollment Option : Never is found and Clicked<br/>
+[ Reported ] FAIL	Submit Enrollment Option link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:145)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4638355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4638355'><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>108</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_020@33bd0</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method()'><b>MyDesk_C1_021_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_021<br>Parameters: MyDesk_C1_021QWERTYTest Description:   
+
+16)Verify the warning message is displayed when enrollment option is opted as Never up on customers next login and interaction history is updated for Account  Holder, 16<br/>
+<a href="#Output-11297774" onClick='toggleBox("Output-11297774", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11297774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11297774">
+[ Reported ] PASS	MyDesk_C1_021 from Row number 16 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+16)Verify the warning message is displayed when enrollment option is opted as Never up on customers next login and interaction history is updated for AccountÂ  Holder<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-1261858165 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:14:50 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:14:55 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01416479209 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:15:07 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:15:13 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:15:13 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:15:22 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:15:35 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:15:36 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:15:49 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:15:50 :Enrollment Options Updated for different Account Type Account Holder<br/>
+[ Reported ] PASS	Enrollment Option : Enroll is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] PASS	Enrollment Option : Never is found<br/>
+[ Reported ] PASS	Enrollment Option : Never is found and Clicked<br/>
+[ Reported ] FAIL	09/03/2017 06:16:03 :Warning Msg for Enrollment Option : Never is not found<br/>
+[ Reported ] INFO	09/03/2017 06:16:05 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] PASS	Interaction history with Never for CLI 01416479209<br/>
+[ Reported ] FAIL	Exit_Interation_Comments link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Exit_Interation_Comments - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClearType(WebActions.java:405)
+	at com.BusinessModules.MyDesk.Common_Functions.enter_Exit_interaction_Comments(Common_Functions.java:373)
+	at com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method(MyDesk_C1_021.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11297774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11297774'><pre>java.lang.AssertionError: null script failed, Exit_Interation_Comments - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClearType(WebActions.java:405)
+	at com.BusinessModules.MyDesk.Common_Functions.enter_Exit_interaction_Comments(Common_Functions.java:373)
+	at com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method(MyDesk_C1_021.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>149</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_021@1fd17e3</td></tr>
+<tr>
+<td title='com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method()'><b>MyDesk_CS_010_Method</b><br>Test class: com.TestSuite.CustomerSearch.MyDesk_CS_010<br>Parameters: MyDesk_CS_010QWERTYTest Description:   
+
+12)Verify alert messages are displayed below the caller information bar( hide ) and  hide option  for alert message in second page  and check hide and click show   in  Third page for alert alone ( Alert Type Accessibility and bereavement ), 12<br/>
+<a href="#Output-33346442" onClick='toggleBox("Output-33346442", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33346442" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33346442">
+[ Reported ] PASS	MyDesk_CS_010 from Row number 12 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+12)Verify alert messages are displayed below the caller information bar( hide ) and  hide option  for alert message in second page  and check hide and click show   in  Third page for alert alone ( Alert Type Accessibility and bereavement )<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=1736801010 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:19:41 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:19:45 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	Customer Information Bar - Caller Name label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - ID&V Status label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Call Reason label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Phone Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Package label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Account Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Monthly Spend label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - My Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Transfers label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Hold Time label  is found<br/>
+[ Reported ] PASS	Customer Information bar details Shown<br/>
+[ Reported ] PASS	Hide Details is found and Clicked<br/>
+[ Reported ] PASS	Details in customer information bar has been hided<br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01443411785 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:20:17 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	Details in customer information bar has been hided<br/>
+[ Reported ] PASS	A bereavement has been reported. The Bereavement Team are awaiting updates on this account. Please transfer to Bereavement team.Alert Message is found<br/>
+[ Reported ] PASS	Alert Message Screen<br/>
+[ Reported ] PASS	Customer has accessibility requirements, please check Trio for further information.Alert Message is found<br/>
+[ Reported ] PASS	Alert Message Screen<br/>
+[ Reported ] PASS	Alert Hide Link is found and Clicked<br/>
+[ Reported ] PASS	No Alert Message found<br/>
+[ Reported ] PASS	No Alert Message found<br/>
+[ Reported ] PASS	Caller Identification - Account Holder is found and Clicked<br/>
+[ Reported ] FAIL	Additional Question 1 been Checked link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Additional Question 1 been Checked - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_NumberOf_Required_Additional_Question_CheckBox(VerifyCaller_Page.java:620)
+	at com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method(MyDesk_CS_010.java:160)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33346442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33346442'><pre>java.lang.AssertionError: null script failed, Additional Question 1 been Checked - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_NumberOf_Required_Additional_Question_CheckBox(VerifyCaller_Page.java:620)
+	at com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method(MyDesk_CS_010.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>84</td>
+<td>com.TestSuite.CustomerSearch.MyDesk_CS_010@dbc5d3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_014.MyDesk_C1_014_Method()'><b>MyDesk_C1_014_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_014<br>Parameters: MyDesk_C1_014QWERTYTest Description:   
+
+9)Verify wrap up option  when a case is opened - Should not allow to Wrap Up , 9<br/>
+<a href="#Output-4085312" onClick='toggleBox("Output-4085312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4085312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4085312">
+[ Reported ] PASS	MyDesk_C1_014 from Row number 9 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+9)Verify wrap up option  when a case is opened - Should not allow to Wrap Up <br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-785036573 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 05:56:20 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 05:56:26 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	Customer Information Bar - Caller Name label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - ID&V Status label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Call Reason label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Phone Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Package label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Account Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Monthly Spend label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - My Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Transfers label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Hold Time label  is found<br/>
+[ Reported ] PASS	Customer Information bar details Shown<br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01709710391 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 05:56:47 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 05:56:52 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 05:56:52 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 05:57:00 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - Payment is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 05:57:11 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 05:57:11 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	Payment page got loaded successfully<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	Wrap Up is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] INFO	09/03/2017 05:57:25 :------ Before clicking other action button ------ <br/>
+[ Reported ] PASS	Other Actions is found and Clicked<br/>
+[ Reported ] PASS	Other Actions is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 05:57:54 :------ Before clicking other action button ------ <br/>
+[ Reported ] PASS	Other Actions is found and Clicked<br/>
+[ Reported ] PASS	Exit_Interation_Comments text box is found and Cancelling task in Summary page is entered<br/>
+[ Reported ] INFO	09/03/2017 05:58:08 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 05:58:11 :------ Before Submission ------ <br/>
+[ Reported ] INFO	09/03/2017 05:58:16 :------ Before Clicking confirm button ------ <br/>
+[ Reported ] PASS	Confirm Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Wrap Up is found and Clicked<br/>
+[ Reported ] PASS	Wrap Up Comment Box text box is found and Wrapped up is entered<br/>
+[ Reported ] INFO	09/03/2017 05:58:31 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	User is found and Clicked<br/>
+[ Reported ] PASS	Logout is found and Clicked<br/>
+[ Reported ] PASS	Logout button is found and clicked.<br/>
+</div>
+</td>
+<td></td>
+<td>242</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_014@1b11784</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method()'><b>MyDesk_C1_018_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_018<br>Parameters: MyDesk_C1_018QWERTYTest Description:   
+
+13)Verify SMS selection is available under Marketing Preference & Preferred contact method of customer tab
+27)Verify marketing preferences and  preferred contact methods is displayed as read only in the customer tab, 13<br/>
+<a href="#Output-26922092" onClick='toggleBox("Output-26922092", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26922092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26922092">
+[ Reported ] PASS	MyDesk_C1_018 from Row number 13 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+13)Verify SMS selection is available under Marketing Preference & Preferred contact method of customer tab
+27)Verify marketing preferences and  preferred contact methods is displayed as read only in the customer tab<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method(MyDesk_C1_018.java:104)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26922092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26922092'><pre>java.lang.NullPointerException
+	at com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method(MyDesk_C1_018.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_018@1a10788</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method()'><b>MyDesk_C1_018_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_018<br>Parameters: MyDesk_C1_018QWERTYTest Description:   
+
+13)Verify SMS selection is available under Marketing Preference & Preferred contact method of customer tab
+27)Verify marketing preferences and  preferred contact methods is displayed as read only in the customer tab, 13<br/>
+<a href="#Output-2131714" onClick='toggleBox("Output-2131714", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2131714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2131714">
+[ Reported ] PASS	MyDesk_C1_018 from Row number 13 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+13)Verify SMS selection is available under Marketing Preference & Preferred contact method of customer tab
+27)Verify marketing preferences and  preferred contact methods is displayed as read only in the customer tab<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method(MyDesk_C1_018.java:104)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2131714'><pre>java.lang.NullPointerException
+	at com.TestSuite.Customer180.MyDesk_C1_018.MyDesk_C1_018_Method(MyDesk_C1_018.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>22</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_018@1a10788</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method()'><b>MyDesk_C1_019_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_019<br>Parameters: MyDesk_C1_019QWERTYTest Description:   
+
+14)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for  Nominated user., 14<br/>
+<a href="#Output-19790486" onClick='toggleBox("Output-19790486", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19790486" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19790486">
+[ Reported ] PASS	MyDesk_C1_019 from Row number 14 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+14)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for  NominatedÂ user.<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=922755740 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:00:30 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:00:39 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01656720836 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:00:55 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	Caller Identification - Nominated User/ Power of Attorney is found and Clicked<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Telephone password CheckBox - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndGetCheckBoxEnableDisableStatus(WebActions.java:139)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_the_Telephone_Password_answered_correctly(VerifyCaller_Page.java:541)
+	at com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method(MyDesk_C1_019.java:121)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19790486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19790486'><pre>java.lang.AssertionError: null script failed, Telephone password CheckBox - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndGetCheckBoxEnableDisableStatus(WebActions.java:139)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_the_Telephone_Password_answered_correctly(VerifyCaller_Page.java:541)
+	at com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method(MyDesk_C1_019.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>52</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_019@6c658</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method()'><b>MyDesk_C1_019_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_019<br>Parameters: MyDesk_C1_019QWERTYTest Description:   
+
+14)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for  Nominated user., 14<br/>
+<a href="#Output-2861885" onClick='toggleBox("Output-2861885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2861885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2861885">
+[ Reported ] PASS	MyDesk_C1_019 from Row number 14 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+14)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for  NominatedÂ user.<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=1829299072 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:01:31 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:01:36 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01132704782 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] FAIL	09/03/2017 06:02:01 :Verify Caller Page is not Loaded<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: MyDesk_C1_019_0 script failed, Verify Caller Page is not Loaded - MyDesk_C1_019_0.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.Engine.Reporter.fnReportFailAndTerminateTest(Reporter.java:91)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.wait_for_Verify_Caller_Page_to_load(VerifyCaller_Page.java:51)
+	at com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method(MyDesk_C1_019.java:119)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2861885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2861885'><pre>java.lang.AssertionError: MyDesk_C1_019_0 script failed, Verify Caller Page is not Loaded - MyDesk_C1_019_0.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.Engine.Reporter.fnReportFailAndTerminateTest(Reporter.java:91)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.wait_for_Verify_Caller_Page_to_load(VerifyCaller_Page.java:51)
+	at com.TestSuite.Customer180.MyDesk_C1_019.MyDesk_C1_019_Method(MyDesk_C1_019.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>62</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_019@6c658</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method()'><b>MyDesk_C1_020_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_020<br>Parameters: MyDesk_C1_020QWERTYTest Description:   
+
+15)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for Account holder, 15<br/>
+<a href="#Output-23639825" onClick='toggleBox("Output-23639825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23639825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23639825">
+[ Reported ] PASS	MyDesk_C1_020 from Row number 15 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+15)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for Account holder<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-1634666704 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:04:16 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:04:23 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 02035839304 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:04:36 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 3 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:04:42 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:04:43 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:04:49 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:05:03 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:05:03 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:05:18 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:05:18 :Enrollment Options Updated for different Account Type Account Holder<br/>
+[ Reported ] PASS	Enrollment Option : Enroll is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] PASS	Enrollment Option : Never is found<br/>
+[ Reported ] PASS	Enrollment Option : Never is found and Clicked<br/>
+[ Reported ] FAIL	Submit Enrollment Option link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:145)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23639825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23639825'><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>118</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_020@33bd0</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method()'><b>MyDesk_C1_020_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_020<br>Parameters: MyDesk_C1_020QWERTYTest Description:   
+
+15)Verify agent is able to select Enrollment option as Not now under Talk safe and verify  interaction history is updated for Account holder, 15<br/>
+<a href="#Output-15196996" onClick='toggleBox("Output-15196996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15196996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15196996">
+[ Reported ] PASS	MyDesk_C1_020 from Row number 15 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+15)Verify agent is able to select Enrollment option as Not now under Talk safe and verifyÂ  interaction history is updated for Account holder<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-321810576 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:06:08 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:06:13 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01416479209 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:06:25 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:06:30 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:06:31 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:06:36 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:06:48 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:06:49 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:07:02 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:07:03 :Enrollment Options Updated for different Account Type Account Holder<br/>
+[ Reported ] PASS	Enrollment Option : Enroll is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] PASS	Enrollment Option : Never is found<br/>
+[ Reported ] PASS	Enrollment Option : Never is found and Clicked<br/>
+[ Reported ] FAIL	Submit Enrollment Option link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:145)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15196996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15196996'><pre>java.lang.AssertionError: null script failed, Submit Enrollment Option - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClick(WebActions.java:904)
+	at com.BusinessModules.MyDesk.Cases_Page.Talksafe_EnrollmentOption_Submit(Cases_Page.java:1682)
+	at com.TestSuite.Customer180.MyDesk_C1_020.MyDesk_C1_020_Method(MyDesk_C1_020.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>103</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_020@33bd0</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method()'><b>MyDesk_C1_021_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_021<br>Parameters: MyDesk_C1_021QWERTYTest Description:   
+
+16)Verify the warning message is displayed when enrollment option is opted as Never up on customers next login and interaction history is updated for Account  Holder, 16<br/>
+<a href="#Output-15498912" onClick='toggleBox("Output-15498912", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15498912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15498912">
+[ Reported ] PASS	MyDesk_C1_021 from Row number 16 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+16)Verify the warning message is displayed when enrollment option is opted as Never up on customers next login and interaction history is updated for AccountÂ  Holder<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-1238615067 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:09:38 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:09:43 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01214399446 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:09:56 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 3 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:10:03 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:10:03 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:10:09 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:10:22 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:10:23 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:10:36 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:10:37 :Enrollment Options Updated for different Account Type Account Holder<br/>
+[ Reported ] PASS	Enrollment Option : Enroll is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] PASS	Enrollment Option : Never is found<br/>
+[ Reported ] PASS	Enrollment Option : Never is found and Clicked<br/>
+[ Reported ] FAIL	09/03/2017 06:10:48 :Warning Msg for Enrollment Option : Never is not found<br/>
+[ Reported ] INFO	09/03/2017 06:10:49 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] PASS	Interaction history with Never for CLI 01214399446<br/>
+[ Reported ] FAIL	Exit_Interation_Comments link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Exit_Interation_Comments - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClearType(WebActions.java:405)
+	at com.BusinessModules.MyDesk.Common_Functions.enter_Exit_interaction_Comments(Common_Functions.java:373)
+	at com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method(MyDesk_C1_021.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15498912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15498912'><pre>java.lang.AssertionError: null script failed, Exit_Interation_Comments - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClearType(WebActions.java:405)
+	at com.BusinessModules.MyDesk.Common_Functions.enter_Exit_interaction_Comments(Common_Functions.java:373)
+	at com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method(MyDesk_C1_021.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>140</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_021@1fd17e3</td></tr>
+<tr>
+<td title='com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method()'><b>MyDesk_C1_021_Method</b><br>Test class: com.TestSuite.Customer180.MyDesk_C1_021<br>Parameters: MyDesk_C1_021QWERTYTest Description:   
+
+16)Verify the warning message is displayed when enrollment option is opted as Never up on customers next login and interaction history is updated for Account  Holder, 16<br/>
+<a href="#Output-17710652" onClick='toggleBox("Output-17710652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17710652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17710652">
+[ Reported ] PASS	MyDesk_C1_021 from Row number 16 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+16)Verify the warning message is displayed when enrollment option is opted as Never up on customers next login and interaction history is updated for AccountÂ  Holder<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-243509814 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:12:05 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:12:09 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01753864935 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:12:21 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	ID&V Status - IDENTIFIED is found<br/>
+[ Reported ] PASS	Additional Question 1 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 2 been Checked is found and Clicked<br/>
+[ Reported ] PASS	Additional Question 3 been Checked is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:12:29 :------ After Additional Question been checked ------ <br/>
+[ Reported ] INFO	09/03/2017 06:12:29 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:12:37 :------ Summary Page ------ <br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Caller Name - (Account Holder) is found<br/>
+[ Reported ] PASS	ID&V Status - VERIFIED is found<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Add Case button is found<br/>
+[ Reported ] PASS	Hovered over Add Case button<br/>
+[ Reported ] PASS	Case Category - TalkSafe is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:13:04 :------ Add Case Panel ------ <br/>
+[ Reported ] INFO	09/03/2017 06:13:04 :------ Add case  ------ <br/>
+[ Reported ] PASS	Add cases is found and Clicked<br/>
+[ Reported ] PASS	Switched to Default Content<br/>
+[ Reported ] PASS	Switched to Frame: Create<br/>
+[ Reported ] PASS	TalkSafe page got loaded successfully<br/>
+[ Reported ] FAIL	09/03/2017 06:13:18 :AccountType is not found<br/>
+[ Reported ] FAIL	09/03/2017 06:13:19 :Enrollment Options Updated for different Account Type Account Holder<br/>
+[ Reported ] PASS	Enrollment Option : Enroll is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found<br/>
+[ Reported ] PASS	Enrollment Option : Not Now is found and Clicked<br/>
+[ Reported ] PASS	Enrollment Option : Never is found<br/>
+[ Reported ] PASS	Enrollment Option : Never is found and Clicked<br/>
+[ Reported ] FAIL	09/03/2017 06:13:29 :Warning Msg for Enrollment Option : Never is not found<br/>
+[ Reported ] INFO	09/03/2017 06:13:30 :------ Before Submission ------ <br/>
+[ Reported ] PASS	Submit Button is found and Clicked<br/>
+[ Reported ] PASS	Interaction history with Never for CLI 01753864935<br/>
+[ Reported ] FAIL	Exit_Interation_Comments link is not found<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Exit_Interation_Comments - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClearType(WebActions.java:405)
+	at com.BusinessModules.MyDesk.Common_Functions.enter_Exit_interaction_Comments(Common_Functions.java:373)
+	at com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method(MyDesk_C1_021.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17710652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17710652'><pre>java.lang.AssertionError: null script failed, Exit_Interation_Comments - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndClearType(WebActions.java:405)
+	at com.BusinessModules.MyDesk.Common_Functions.enter_Exit_interaction_Comments(Common_Functions.java:373)
+	at com.TestSuite.Customer180.MyDesk_C1_021.MyDesk_C1_021_Method(MyDesk_C1_021.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>169</td>
+<td>com.TestSuite.Customer180.MyDesk_C1_021@1fd17e3</td></tr>
+<tr>
+<td title='com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method()'><b>MyDesk_CS_010_Method</b><br>Test class: com.TestSuite.CustomerSearch.MyDesk_CS_010<br>Parameters: MyDesk_CS_010QWERTYTest Description:   
+
+12)Verify alert messages are displayed below the caller information bar( hide ) and  hide option  for alert message in second page  and check hide and click show   in  Third page for alert alone ( Alert Type Accessibility and bereavement ), 12<br/>
+<a href="#Output-2207368" onClick='toggleBox("Output-2207368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2207368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2207368">
+[ Reported ] PASS	MyDesk_CS_010 from Row number 12 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+12)Verify alert messages are displayed below the caller information bar( hide ) and  hide option  for alert message in second page  and check hide and click show   in  Third page for alert alone ( Alert Type Accessibility and bereavement )<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=1902355748 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:17:09 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:17:14 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	Customer Information Bar - Caller Name label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - ID&V Status label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Call Reason label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Phone Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Package label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Account Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Monthly Spend label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - My Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Transfers label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Hold Time label  is found<br/>
+[ Reported ] PASS	Customer Information bar details Shown<br/>
+[ Reported ] PASS	Hide Details is found and Clicked<br/>
+[ Reported ] PASS	Details in customer information bar has been hided<br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01443411785 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:17:41 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	Details in customer information bar has been hided<br/>
+[ Reported ] PASS	A bereavement has been reported. The Bereavement Team are awaiting updates on this account. Please transfer to Bereavement team.Alert Message is found<br/>
+[ Reported ] PASS	Alert Message Screen<br/>
+[ Reported ] PASS	Customer has accessibility requirements, please check Trio for further information.Alert Message is found<br/>
+[ Reported ] PASS	Alert Message Screen<br/>
+[ Reported ] PASS	Alert Hide Link is found and Clicked<br/>
+[ Reported ] PASS	No Alert Message found<br/>
+[ Reported ] PASS	No Alert Message found<br/>
+[ Reported ] PASS	Caller Identification - Account Holder is found and Clicked<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Additional Question:1 - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndGetCheckBoxEnableDisableStatus(WebActions.java:139)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_NumberOf_Required_Additional_Question_CheckBox(VerifyCaller_Page.java:613)
+	at com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method(MyDesk_CS_010.java:160)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2207368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2207368'><pre>java.lang.AssertionError: null script failed, Additional Question:1 - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndGetCheckBoxEnableDisableStatus(WebActions.java:139)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_NumberOf_Required_Additional_Question_CheckBox(VerifyCaller_Page.java:613)
+	at com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method(MyDesk_CS_010.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>75</td>
+<td>com.TestSuite.CustomerSearch.MyDesk_CS_010@dbc5d3</td></tr>
+<tr>
+<td title='com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method()'><b>MyDesk_CS_010_Method</b><br>Test class: com.TestSuite.CustomerSearch.MyDesk_CS_010<br>Parameters: MyDesk_CS_010QWERTYTest Description:   
+
+12)Verify alert messages are displayed below the caller information bar( hide ) and  hide option  for alert message in second page  and check hide and click show   in  Third page for alert alone ( Alert Type Accessibility and bereavement ), 12<br/>
+<a href="#Output-3696863" onClick='toggleBox("Output-3696863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3696863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3696863">
+[ Reported ] PASS	MyDesk_CS_010 from Row number 12 -> Test Started<br/>
+[ Reported ] INFO	Test Description:   
+
+12)Verify alert messages are displayed below the caller information bar( hide ) and  hide option  for alert message in second page  and check hide and click show   in  Third page for alert alone ( Alert Type Accessibility and bereavement )<br/>
+[ Reported ] INFO	Test Case Running on Desktop Mode:<br/>
+[ Reported ] PASS	UserIdentifier text box is found and raja.rajan is entered<br/>
+[ Reported ] PASS	Password text box is found and welcome is entered<br/>
+[ Reported ] PASS	Log In is found and Clicked<br/>
+[ Reported ] PASS	http://10.180.37.104:9080/prweb/PRServlet/27Ne4jELjBKiMg19rDy62w%5B%5B*/!STANDARD?pzPostData=-1423182211 has been navigated<br/>
+[ Reported ] PASS	Switched to new window<br/>
+[ Reported ] INFO	09/03/2017 06:18:25 :------ Home Page ------ <br/>
+[ Reported ] PASS	New Interaction Button is found and Clicked<br/>
+[ Reported ] PASS	Switched to Frame: Search<br/>
+[ Reported ] INFO	09/03/2017 06:18:29 :------ Identify Customer Page ------ <br/>
+[ Reported ] PASS	Customer Information Bar - Caller Name label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - ID&V Status label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Call Reason label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Phone Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Package label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Account Number label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Monthly Spend label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - My Call Length label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Total Transfers label  is found<br/>
+[ Reported ] PASS	Customer Information Bar - Hold Time label  is found<br/>
+[ Reported ] PASS	Customer Information bar details Shown<br/>
+[ Reported ] PASS	Hide Details is found and Clicked<br/>
+[ Reported ] PASS	Details in customer information bar has been hided<br/>
+[ Reported ] PASS	PhoneNumber Search Button is found and Clicked<br/>
+[ Reported ] PASS	PhoneNumber TextBox text box is found and 01443411785 is entered<br/>
+[ Reported ] PASS	Search Button is found and Clicked<br/>
+[ Reported ] INFO	09/03/2017 06:18:55 :------ Verify Caller Page ------ <br/>
+[ Reported ] PASS	Details in customer information bar has been hided<br/>
+[ Reported ] PASS	A bereavement has been reported. The Bereavement Team are awaiting updates on this account. Please transfer to Bereavement team.Alert Message is found<br/>
+[ Reported ] PASS	Alert Message Screen<br/>
+[ Reported ] PASS	Customer has accessibility requirements, please check Trio for further information.Alert Message is found<br/>
+[ Reported ] PASS	Alert Message Screen<br/>
+[ Reported ] PASS	Alert Hide Link is found and Clicked<br/>
+[ Reported ] PASS	No Alert Message found<br/>
+[ Reported ] PASS	No Alert Message found<br/>
+[ Reported ] PASS	Caller Identification - Account Holder is found and Clicked<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null script failed, Additional Question:1 - null.jpg for more details.
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndGetCheckBoxEnableDisableStatus(WebActions.java:139)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_NumberOf_Required_Additional_Question_CheckBox(VerifyCaller_Page.java:613)
+	at com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method(MyDesk_CS_010.java:160)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3696863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3696863'><pre>java.lang.AssertionError: null script failed, Additional Question:1 - null.jpg for more details.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.Engine.Reporter.exception(Reporter.java:107)
+	at com.WebActions.WebActions.VerifyElementPresentAndGetCheckBoxEnableDisableStatus(WebActions.java:139)
+	at com.BusinessModules.MyDesk.VerifyCaller_Page.select_NumberOf_Required_Additional_Question_CheckBox(VerifyCaller_Page.java:613)
+	at com.TestSuite.CustomerSearch.MyDesk_CS_010.MyDesk_CS_010_Method(MyDesk_CS_010.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>72</td>
+<td>com.TestSuite.CustomerSearch.MyDesk_CS_010@dbc5d3</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AUTOMATION Suite" configfailurepolicy="continue"
+	parallel="classes" thread-count="1">
+<!-- 	<listeners>
+        <listener class-name="com.Retry.RetryListener"/>
+  </listeners> --> 
+	<parameter name="test.env" value="@ENV@" />
+	<parameter name="whereToRun" value="@MODE@" />
+	<parameter name="RunType" value="@RunType@" />
+	<test name="AUTOMATION">
+		<classes>
+
+
+
+
+			
+			
+
+			
+
+			<class name="com.TestSuite.BUTK.MyDesk_BT_001" />
+			 
+<!-- 			<class name="com.TestSuite.Customer180.MyDesk_C1_004" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_005" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_006" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_008" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_010" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_017" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_018" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_019" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_020" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_021" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_022" /> -->
+			
+
+		</classes>
+		</test>
+	</suite>
+
+
+
+			<!-- 
+
+			
+
+			BVT Pack
+
+		
+
+		<class name="com.TestSuite.BVT.MyDesk_CS_001" />	
+		<class name="com.TestSuite.BVT.MyDesk_CS_009" />
+		<class name="com.TestSuite.BVT.MyDesk_MS_001" />
+		<class name="com.TestSuite.BVT.MyDesk_CS_028" />	
+		<class name="com.TestSuite.BVT.MyDesk_PayFix_001"/>
+		<class name="com.TestSuite.BVT.MyDesk_C1_002" />
+		<class name="com.TestSuite.BVT.MyDesk_C1_013" />
+		<class name="com.TestSuite.BVT.MyDesk_C1_018" />
+		<class name="com.TestSuite.BVT.MyDesk_C1_020" />
+
+			
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_001" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_002" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_003" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_004" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_005" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_006" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_007" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_008" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_009" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_010" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_011" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_012" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_013" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_014" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_015" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_016" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_017" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_018" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_019" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_020" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_021" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_022" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_023" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_024" /> 
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_025" /> 
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_026" /> 
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_027" /> 
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_028" /> 
+			
+			<class name="com.TestSuite.Customer180.MyDesk_C1_001" /> 
+			<class name="com.TestSuite.Customer180.MyDesk_C1_002" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_003" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_004" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_005" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_006" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_008" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_009_DB" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_010" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_011" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_012" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_013" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_014" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_017" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_018" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_019" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_020" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_021" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_022" />
+			
+			<class name="com.TestSuite.Payments.MyDesk_PayFix_001" />
+			<class name="com.TestSuite.Payments.MyDesk_PayFix_002" />
+			<class name="com.TestSuite.Payments.MyDesk_PayFix_007" />
+			<class name="com.TestSuite.Payments.MyDesk_PayFix_008" />
+			<class name="com.TestSuite.Payments.MyDesk_PayFix_009" />
+			<class name="com.TestSuite.Payments.MyDesk_PayMob_001" />
+			<class name="com.TestSuite.Payments.MyDesk_PayMob_007" />
+			<class name="com.TestSuite.Payments.MyDesk_PayMob_008" />
+			<class name="com.TestSuite.Payments.MyDesk_PayMob_009" />
+			
+			-->
+			
+			
+			<!-- Issues Still 
+			
+			
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_005" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_006" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_007" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_010" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_017" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_018" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_019" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_022" />
+			<class name="com.TestSuite.CustomerSearch.MyDesk_CS_025" /> 
+			<class name="com.TestSuite.Customer180.MyDesk_C1_004" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_005" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_006" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_008" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_010" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_017" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_018" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_019" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_020" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_021" />
+			<class name="com.TestSuite.Customer180.MyDesk_C1_022" />			
+			
+			
+			-->

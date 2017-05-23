@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="LocalJARs/poi-3.9-20121203.jar;LocalJARs/jsch-0.1.50.jar;LocalJARs/ojdbc14.jar;LocalJARs/jxl.jar;LocalJARs/mail-1.4.jar;LocalJARs/mysql-connector-java-5.0.8-bin.jar;LocalJARs/extentreports-java-2.41.1.jar;LocalJARs/saxon-8.7.jar;LocalJARs/jms.jar;LocalJARs/Selenium_Galen.jar;LocalJARs/SaxonLiaison.jar;LocalJARs/jsoup-1.7.3.jar;LocalJARs/testng-6.8.jar;LocalJARs/tibjms.jar" destdir="doc" doctitle="Online_Automation_BSS_16_6_AIP" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.Utils,com.SharedModules,com.OnlineSales.HappyPaths,com.TestSuite.LiveSanity,com.OnlineFunctions.Sales,com.EMS,com.Engine,com.BusinessModules.OnlinesSales.Gen7,com.TestSuite.WelcomeCentre,com.TestSuite.CustomerSales,com.Enumerations,com.Logger,com.TestSuite.UpgradeSales,com.PUTTY,com.UnixVerification,com.WelcomeCentre.BusinessModules,com.TestSuite.UFO,com.TestSuite,com.WebActions,com.Stubs,com.Support.Online,com.ObjectIdentifiers" source="1.7" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
